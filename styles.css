@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(34, 34, 34);
+    background-color:white;
 }
 
 .container {
@@ -58,10 +58,13 @@ body {
 
 /* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
+    .body{
+        align-items: center;
+    }
     .container {
         flex-direction: row;
         height: auto;
-        padding-top: 1000%; /* Añade espacio en la parte superior para móviles */
+        padding-top: 570%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
     }
 
