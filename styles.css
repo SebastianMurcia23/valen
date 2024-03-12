@@ -43,6 +43,11 @@ body {
     background-color: rgb(68, 68, 68);
     transition: 300ms;
 }
+.personaje img {
+    max-width: 100%;
+    height: auto; /* Esto asegura que la imagen se ajuste proporcionalmente al cambiar el ancho */
+    display: block; /* Esto ayuda a evitar espacios vacíos alrededor de la imagen */
+}
 
 /* hover efectos */
 .card:hover .personaje, 
@@ -68,5 +73,11 @@ body {
     .personaje, .personaje_2, .personaje_3 {
         height: 120px; /* Ajusta la altura para móviles */
         width: 250px; /* Hace que el ancho sea responsivo */
+    }
+
+    .personaje img {
+        max-width: 100%;
+        height: auto; /* Esto asegura que la imagen se ajuste proporcionalmente al cambiar el ancho */
+        display: block; /* Esto ayuda a evitar espacios vacíos alrededor de la imagen */
     }
 }
