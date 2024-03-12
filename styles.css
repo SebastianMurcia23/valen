@@ -59,7 +59,7 @@ body {
 /* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
     .container {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         padding-top: 1000%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
