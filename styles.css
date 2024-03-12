@@ -61,7 +61,7 @@ body {
     .container {
         flex-direction: column;
         height: auto;
-        padding-top: 520%; /* Añade espacio en la parte superior para móviles */
+        padding-top: 570%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
     }
 
