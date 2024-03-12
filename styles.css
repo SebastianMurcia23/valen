@@ -66,6 +66,7 @@ body {
         height: auto;
         padding-top: 680%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
+
     }
 
     .card {
