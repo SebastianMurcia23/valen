@@ -61,23 +61,24 @@ body {
     .container {
         flex-direction: column;
         height: auto;
-        padding-top: 50px; /* Añade espacio en la parte superior para móviles */
+        padding-top: 520%; /* Añade espacio en la parte superior para móviles */
+        align-items: center;
     }
 
     .card {
-        height: 120px;
-        width: 250px; /* Ajusta el ancho de las tarjetas para móviles */
-         /* Aumenta el espaciado vertical entre tarjetas */
+        height: 650px;
+        width: 258px;
+        margin: 10px;
+        transition: 300ms;
+        position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
     }
 
     .personaje, .personaje_2, .personaje_3 {
-        height: 120px; /* Ajusta la altura para móviles */
-        width: 250px; /* Hace que el ancho sea responsivo */
+        height: 650px;
+        width: 258px;   
     }
 
     .personaje img {
-        max-width: 100%;
-        height: auto; /* Esto asegura que la imagen se ajuste proporcionalmente al cambiar el ancho */
-        display: block; /* Esto ayuda a evitar espacios vacíos alrededor de la imagen */
+        width: 100%; /* Ajusta el ancho al 100% en dispositivos con una anchura máxima de 600px */
     }
 }
