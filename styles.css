@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+}
+
+.container {
+    height: 100vh;
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Asegura el centrado horizontal para diferentes tamaños */
+}
+
+.card {
+    height: 650px;
+    width: 258px;
+    margin: 10px;
+    transition: 300ms;
+    position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
+}
+
+.personaje, .personaje_2, .personaje_3 {
+    height: 650px;
+    width: 258px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: rgb(68, 68, 68);
+    transition: 300ms;
+}
+
+/* hover efectos */
+.card:hover .personaje, 
+.card:hover .personaje_2, 
+.card:hover .personaje_3 {
+    background-image: radial-gradient(white, rgb(68, 68, 68));
+}
+
+/* Ajustes responsivos */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding-top: 50px; /* Añade espacio en la parte superior para móviles */
+    }
+
+    .card {
+        height: auto;
+        width: 90%; /* Ajusta el ancho de las tarjetas para móviles */
+        margin: 20px 0; /* Aumenta el espaciado vertical entre tarjetas */
+    }
+
+    .personaje, .personaje_2, .personaje_3 {
+        height: 300px; /* Ajusta la altura para móviles */
+        width: 100%; /* Hace que el ancho sea responsivo */
+    }
+}
