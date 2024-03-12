@@ -60,13 +60,13 @@ body {
     }
 
     .card {
-        height: 150px;
+        height: 120px;
         width: 250px; /* Ajusta el ancho de las tarjetas para móviles */
          /* Aumenta el espaciado vertical entre tarjetas */
     }
 
     .personaje, .personaje_2, .personaje_3 {
-        height: 150px; /* Ajusta la altura para móviles */
+        height: 120px; /* Ajusta la altura para móviles */
         width: 250px; /* Hace que el ancho sea responsivo */
     }
 }
