@@ -33,7 +33,7 @@ body {
     position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
 }
 
-.personaje, .personaje_2, .personaje_3 {
+.personaje{
     height: 650px;
     width: 258px;
     display: flex;
@@ -52,11 +52,11 @@ body {
 
 .text {
     display: none;
-    color: white;
+    color: black;
     text-align: center;
 }
 
-.card:hover .personaje, .card:hover .personaje_2, .card:hover .personaje_3 {
+.card:hover .personaje {
     background-image: radial-gradient(white, rgb(68, 68, 68));
 }
 
@@ -80,7 +80,7 @@ body {
         position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
     }
 
-    .personaje, .personaje_2, .personaje_3 {
+    .personaje{
         height: 650px;
         width: 258px;   
     }
