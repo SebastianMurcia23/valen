@@ -43,22 +43,26 @@ body {
     background-color: rgb(68, 68, 68);
     transition: 300ms;
 }
+
 .personaje img {
     max-width: 100%;
     height: auto; /* Esto asegura que la imagen se ajuste proporcionalmente al cambiar el ancho */
     display: block; /* Esto ayuda a evitar espacios vacíos alrededor de la imagen */
 }
 
-/* hover efectos */
-.card:hover .personaje, 
-.card:hover .personaje_2, 
-.card:hover .personaje_3 {
+.text {
+    display: none;
+    color: white;
+    text-align: center;
+}
+
+.card:hover .personaje, .card:hover .personaje_2, .card:hover .personaje_3 {
     background-image: radial-gradient(white, rgb(68, 68, 68));
 }
 
 /* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
-    .body{
+    .body {
         align-items: center;
     }
     .container {
@@ -66,7 +70,6 @@ body {
         height: auto;
         padding-top: 680%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
-
     }
 
     .card {
