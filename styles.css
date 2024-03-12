@@ -52,7 +52,7 @@ body {
 
 .text {
     display: none;
-    color: black;
+    font-weight: bold;
     text-align: center;
 }
 
