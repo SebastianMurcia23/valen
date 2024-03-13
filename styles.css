@@ -54,10 +54,40 @@ body {
     display: none;
     font-weight: bold;
     text-align: center;
+    color:black ;
+    font-size:23px ;
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
 }
 
 .card:hover .personaje {
     background-image: radial-gradient(white, rgb(68, 68, 68));
+}
+.letter {
+    position: absolute; /* Posición absoluta para que esté sobre la imagen */
+    top: 15%; /* Distancia desde la parte superior */
+    left: 45%; /* Distancia desde la izquierda */
+    color: white; /* Color de la letra */
+    font-size: 32px; /* Tamaño de la letra */
+    font-weight: bold; /* Peso de la letra */
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.Button {
+    position: absolute;
+    top: 85%;
+    left: auto;
+    margin-top: 10px; /* Espacio entre el botón y el texto/imagen */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño del texto */
+    color: #fff; /* Color del texto */
+    background-color: #5e646a; /* Color de fondo */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    outline: none; /* Elimina el contorno que aparece al hacer clic */
+}
+
+.Button:hover {
+    background-color: #353637; /* Color de fondo al pasar el ratón por encima */
 }
 
 /* Ajustes responsivos */
@@ -90,13 +120,3 @@ body {
     }
 }
 /* Añade esto al final de tu archivo CSS */
-
-.letter {
-    position: absolute; /* Posición absoluta para que esté sobre la imagen */
-    top: 15%; /* Distancia desde la parte superior */
-    left: 45%; /* Distancia desde la izquierda */
-    color: white; /* Color de la letra */
-    font-size: 32px; /* Tamaño de la letra */
-    font-weight: bold; /* Peso de la letra */
-    font-family:Georgia, 'Times New Roman', Times, serif ;
-}
