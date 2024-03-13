@@ -73,8 +73,8 @@ body {
 }
 .Button {
     position: absolute;
-    top: 85%;
-    left: auto;
+    top: 92.4%;
+    left: 110%;
     margin-top: 10px; /* Espacio entre el botón y el texto/imagen */
     padding: 10px 20px; /* Espaciado interno del botón */
     font-size: 16px; /* Tamaño del texto */
