@@ -89,3 +89,14 @@ body {
         width: 100%; /* Ajusta el ancho al 100% en dispositivos con una anchura máxima de 600px */
     }
 }
+/* Añade esto al final de tu archivo CSS */
+
+.letter {
+    position: absolute; /* Posición absoluta para que esté sobre la imagen */
+    top: 15%; /* Distancia desde la parte superior */
+    left: 45%; /* Distancia desde la izquierda */
+    color: white; /* Color de la letra */
+    font-size: 32px; /* Tamaño de la letra */
+    font-weight: bold; /* Peso de la letra */
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
