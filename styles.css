@@ -85,6 +85,9 @@ body {
     cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
     outline: none; /* Elimina el contorno que aparece al hacer clic */
 }
+.audio{
+    background-color: #5e646a;
+}
 
 .Button:hover {
     background-color: #353637; /* Color de fondo al pasar el ratón por encima */
