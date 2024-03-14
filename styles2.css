@@ -35,7 +35,7 @@ body {
 
 .personaje{
     height: 650px;
-    width: 210px;
+    width: 258px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@ body {
 
     .personaje{
         height: 650px;
-        width: 258px;   
+        width: 210px;   
     }
 
     .personaje img {
