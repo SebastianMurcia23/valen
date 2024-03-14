@@ -35,7 +35,7 @@ body {
 
 .personaje{
     height: 650px;
-    width: 258px;
+    width: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
