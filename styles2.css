@@ -92,7 +92,7 @@ body {
 /* Ajustes responsivos */
 @media only screen and (max-width: 700px) {
     .body {
-        align-items: center;
+        align-items: left;
     }
     .container {
         flex-direction: row;
