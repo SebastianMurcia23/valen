@@ -21,7 +21,7 @@ function textImg(card) {
 
 function abrirEnlace() {
     // Ruta al archivo HTML que deseas abrir
-    var rutaArchivo = "index.html";
+    var rutaArchivo = "index.html.";
     // Cambia la ubicación actual
     window.location.href = rutaArchivo;
 }
