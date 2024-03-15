@@ -17,7 +17,6 @@ function textImg(card) {
         img.style.display = "none";
     }else {
        button.style.display = "none"
-       img.style.display = "block"; 
     }
     
 }
