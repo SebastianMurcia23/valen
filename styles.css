@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -13,111 +12,96 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
 }
 
 .container {
-    height: 100vh;
-    width: 92%;
+    width: 90%; /* Cambié el 92% por 90% */
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; /* Asegura el centrado horizontal para diferentes tamaños */
+    justify-content: center;
 }
 
 .card {
-    height: 650px;
-    width: 258px;
+    width: 45%; /* Utilizamos porcentajes para ajustar el ancho */
     margin: 10px;
-    transition: 300ms;
-    position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
+    position: relative;
 }
 
-.personaje{
-    height: 650px;
-    width: 258px;
+.personaje {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10%;
     background-color: rgb(68, 68, 68);
-    transition: 300ms;
 }
 
 .personaje img {
     max-width: 100%;
-    height: auto; /* Esto asegura que la imagen se ajuste proporcionalmente al cambiar el ancho */
-    display: block; /* Esto ayuda a evitar espacios vacíos alrededor de la imagen */
+    height: auto;
+    display: block;
 }
 
 .text {
     display: none;
     font-weight: bold;
     text-align: center;
-    color:black ;
-    font-size:23px ;
+    color: black;
+    font-size: 23px;
     font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
 }
 
 .card:hover .personaje {
     background-image: radial-gradient(white, rgb(68, 68, 68));
 }
+
 .letter {
-    position: absolute; /* Posición absoluta para que esté sobre la imagen */
-    top: 15%; /* Distancia desde la parte superior */
-    left: 45%; /* Distancia desde la izquierda */
-    color: white; /* Color de la letra */
-    font-size: 32px; /* Tamaño de la letra */
-    font-weight: bold; /* Peso de la letra */
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .Button {
     position: absolute;
     top: 92.4%;
     left: 110%;
-    margin-top: 10px; /* Espacio entre el botón y el texto/imagen */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 16px; /* Tamaño del texto */
-    color: #fff; /* Color del texto */
-    background-color: #5e646a; /* Color de fondo */
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
-    outline: none; /* Elimina el contorno que aparece al hacer clic */
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5e646a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
 }
-
 
 .Button:hover {
-    background-color: #353637; /* Color de fondo al pasar el ratón por encima */
+    background-color: #353637;
 }
 
-/* Ajustes responsivos */
-@media only screen and (max-width: 600px) {
-    .body {
-        align-items: center;
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%; /* Ajustamos el ancho de la tarjeta para dispositivos más pequeños */
     }
+}
+
+@media only screen and (max-width: 600px) {
     .container {
-        flex-direction: row;
-        height: auto;
-        padding-top: 680%; /* Añade espacio en la parte superior para móviles */
-        align-items: center;
+        padding-top: 680%; /* Esto parece un error, no deberías necesitar esto */
     }
 
     .card {
-        height: 650px;
-        width: 258px;
-        margin: 10px;
-        transition: 300ms;
-        position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
-    }
-
-    .personaje{
-        height: 650px;
-        width: 258px;   
+        width: 100%; /* Cambiamos el ancho de la tarjeta para dispositivos móviles */
     }
 
     .personaje img {
-        width: 100%; /* Ajusta el ancho al 100% en dispositivos con una anchura máxima de 600px */
+        width: 100%;
     }
 }
-/* Añade esto al final de tu archivo CSS */
