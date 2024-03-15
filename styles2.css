@@ -103,7 +103,7 @@ body {
 
     .card {
         height: 650px;
-        width: 258px;
+        width: 10px;
         margin: 10px;
         transition: 300ms;
         position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
@@ -111,7 +111,7 @@ body {
 
     .personaje{
         height: 650px;
-        width: 100px;   
+        width: 10px;   
     }
 
     .personaje img {
