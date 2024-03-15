@@ -91,7 +91,7 @@ body {
     background-color: #353637; /* Color de fondo al pasar el ratón por encima */
 }
 
-/* Ajustes responsivos */
+/* Ajustes responsivosr */
 @media only screen and (max-width: 600px) {
     .body {
         align-items: center;
