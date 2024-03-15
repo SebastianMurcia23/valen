@@ -92,41 +92,32 @@ body {
 }
 
 /* Ajustes responsivosr */
-/* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
+    .body {
+        align-items: center;
+    }
     .container {
-        flex-direction: column; /* Cambiar la dirección del flexbox para que los elementos apilen verticalmente */
+        flex-direction: row;
+        height: auto;
+        padding-top: 680%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
     }
 
     .card {
-        height: auto; /* Altura automática para que se ajuste al contenido */
-        width: 90%; /* Ancho del 90% del contenedor */
+        height: 650px;
+        width: 258px;
         margin: 10px;
+        transition: 300ms;
+        position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
     }
 
-    .personaje {
-        height: auto; /* Altura automática para que se ajuste al contenido */
-        width: 100%;
+    .personaje{
+        height: 650px;
+        width: 258px;   
     }
 
     .personaje img {
-        max-width: 100%; /* Ajusta el ancho máximo de la imagen */
-        height: auto; /* Altura automática para que la imagen se ajuste proporcionalmente */
-    }
-
-    .text {
-        font-size: 16px; /* Reducir el tamaño del texto para dispositivos móviles */
-        padding: 10px; /* Agregar un poco de espacio alrededor del texto */
-    }
-
-    .letter {
-        font-size: 24px; /* Reducir el tamaño de la letra para dispositivos móviles */
-    }
-
-    .Button {
-        position: static; /* Cambiar la posición del botón a estática para que aparezca debajo del texto */
-        margin-top: 10px; /* Añadir un poco de espacio encima del botón */
-        margin-bottom: 20px; /* Añadir espacio debajo del botón */
+        width: 100%; /* Ajusta el ancho al 100% en dispositivos con una anchura máxima de 600px */
     }
 }
+/* Añade esto al final de tu archivo CSS */
