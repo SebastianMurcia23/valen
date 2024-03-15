@@ -95,7 +95,7 @@ body {
         align-items: center;
     }
     .container {
-        flex-direction: row;
+        flex-direction: column;
         height: auto;
         padding-top: 680%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
@@ -111,7 +111,7 @@ body {
 
     .personaje{
         height: 650px;
-        width: 100px;   
+        width: 10px;   
     }
 
     .personaje img {
