@@ -2,7 +2,6 @@ function textImg(card) {
     var text = card.querySelector('.text');
     var img = card.querySelector('.img1');
     var button = card.querySelector('.Button');
-    var gift = card.querySelector('.gift');
 
     if (text.style.display === "none") {
         text.style.display = "block";
