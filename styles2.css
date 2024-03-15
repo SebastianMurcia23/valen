@@ -97,7 +97,7 @@ body {
     .container {
         flex-direction: row;
         height: auto;
-        padding-top: 680%; /* Añade espacio en la parte superior para móviles */
+        padding-top: 800%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
     }
 
