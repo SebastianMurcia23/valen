@@ -25,3 +25,14 @@ function abrirEnlace() {
     // Cambia la ubicación actual
     window.location.href = rutaArchivo;
 }
+
+function adjustZoom() {
+    if (window.innerWidth < window.innerHeight) {
+        document.body.style.zoom = "50%";
+    } else {
+        document.body.style.zoom = "100%";
+    }
+}
+
+window.onload = adjustZoom;
+window.addEventListener("orientationchange", adjustZoom);
