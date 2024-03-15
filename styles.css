@@ -91,33 +91,40 @@ body {
     background-color: #353637; /* Color de fondo al pasar el ratón por encima */
 }
 
-/* Ajustes responsivosr */
+/* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
-    .body {
-        align-items: center;
-    }
     .container {
-        flex-direction: row;
-        height: auto;
-        padding-top: 680%; /* Añade espacio en la parte superior para móviles */
+        flex-direction: column;
         align-items: center;
     }
 
     .card {
-        height: 650px;
-        width: 258px;
-        margin: 10px;
-        transition: 300ms;
-        position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
+        width: 90%; /* Ancho del 90% del contenedor */
+        margin: 10px auto; /* Alinear al centro y agregar margen */
     }
 
-    .personaje{
-        height: 650px;
-        width: 258px;   
+    .personaje {
+        width: 100%;
     }
 
     .personaje img {
-        width: 100%; /* Ajusta el ancho al 100% en dispositivos con una anchura máxima de 600px */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text {
+        font-size: 16px;
+        padding: 10px;
+        text-align: center; /* Alinear el texto al centro */
+    }
+
+    .letter {
+        font-size: 24px;
+    }
+
+    .Button {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 }
-/* Añade esto al final de tu archivo CSS */
