@@ -12,7 +12,7 @@ function textImg(card) {
         img.style.display = "block";
     }
 
-    if (button.style.display === "none") {
+    if (button.style.display !== "none") {
         button.style.display = "block";
     }else {
        button.style.display = "none" 
