@@ -20,7 +20,6 @@ function textImg(card) {
 }
 
 
-
 document.addEventListener("DOMContentLoaded", function() {
     const audio = document.getElementById("myAudio");
 
@@ -42,7 +41,7 @@ function abrirEnlace() {
     localStorage.setItem("audioTime", audio.currentTime);
     
     // Ruta al archivo HTML que deseas abrir
-    var rutaArchivo = "index2.html";
+    var rutaArchivo = "index.html";
     // Cambia la ubicación actual
     window.location.href = rutaArchivo;
 }
