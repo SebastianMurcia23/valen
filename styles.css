@@ -93,38 +93,31 @@ body {
 
 /* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
+    .body {
+        align-items: center;
+    }
     .container {
-        flex-direction: column;
+        flex-direction: row;
+        height: auto;
+        padding-top: 680%; /* Añade espacio en la parte superior para móviles */
         align-items: center;
     }
 
     .card {
-        width: 90%; /* Ancho del 90% del contenedor */
-        margin: 10px auto; /* Alinear al centro y agregar margen */
+        height: 650px;
+        width: 258px;
+        margin: 10px;
+        transition: 300ms;
+        position: relative; /* Se asegura que los elementos absolutos se posicionen correctamente */
     }
 
-    .personaje {
-        width: 100%;
+    .personaje{
+        height: 650px;
+        width: 258px;   
     }
 
     .personaje img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .text {
-        font-size: 16px;
-        padding: 10px;
-        text-align: center; /* Alinear el texto al centro */
-    }
-
-    .letter {
-        font-size: 24px;
-    }
-
-    .Button {
-        position: static;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        width: 100%; /* Ajusta el ancho al 100% en dispositivos con una anchura máxima de 600px */
     }
 }
+/* Añade esto al final de tu archivo CSS */
