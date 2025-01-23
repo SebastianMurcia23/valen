@@ -55,24 +55,5 @@
         </audio>
     </div>
     <script src="script.js"></script>
- <script>
-        const audio = document.getElementById('backgroundMusic');
-        
-        // Recupera la posición del audio desde localStorage
-        const savedTime = localStorage.getItem('audioTime');
-        if (savedTime) {
-            audio.currentTime = parseFloat(savedTime);
-        }
-
-        // Guarda la posición actual del audio antes de salir de la página
-        window.addEventListener('beforeunload', () => {
-            localStorage.setItem('audioTime', audio.currentTime);
-        });
-
-        function abrirEnlace(url) {
-            localStorage.setItem('audioTime', audio.currentTime);
-            window.location.href = url;
-        }
-    </script>
 </body>
 </html>
